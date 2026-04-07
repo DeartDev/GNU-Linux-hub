@@ -100,6 +100,37 @@ body {
     transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
+/* Scrollbar Neón */
+:root {
+    scrollbar-color: var(--accent-cyan) var(--bg-secondary);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-cyan);
+    border-radius: 5px;
+    border: 2px solid var(--bg-secondary);
+    box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-green);
+    box-shadow: 0 0 12px var(--accent-green);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--bg-secondary);
+}
+
 /* Skip Link para Accesibilidad */
 .skip-link {
     position: absolute;
@@ -312,10 +343,13 @@ body {
 
 .theme-icon {
     display: none;
+    font-size: 1.2rem;
 }
 
 .theme-icon.sun {
     display: block;
+    filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.8));
+    color: var(--accent-gold);
 }
 
 [data-theme="light"] .theme-icon.sun {
@@ -324,6 +358,8 @@ body {
 
 [data-theme="light"] .theme-icon.moon {
     display: block;
+    filter: drop-shadow(0 0 3px rgba(0, 255, 255, 0.6));
+    color: var(--accent-cyan);
 }
 
 /* Menú Hamburguesa - Más compacto */
