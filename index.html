@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GNU/Linux Hub - Guía completa sobre Linux desde principiantes hasta avanzados. Descubre qué es Linux, distros, entornos de escritorio y más.">
+    <meta name="keywords" content="Linux, GNU, Kernel, Distros, Ubuntu, Debian, Arch, Fedora, Terminal, Comandos Linux">
+    <meta name="author" content="TerWorks - DeartDev">
+    <title>GNU/Linux Hub - Tu Portal al Mundo Linux</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to content para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">Linux Hub</span>
+                <span class="logo-bracket">]</span>
+                <span class="cursor">_</span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#que-es" class="nav-link">¿Qué es?</a></li>
+                    <li><a href="#kernel" class="nav-link">Kernel/GNU</a></li>
+                    <li><a href="#distros" class="nav-link">Distros</a></li>
+                    <li><a href="#top" class="nav-link">Top</a></li>
+                    <li><a href="#ruta" class="nav-link">Ruta</a></li>
+                    <li><a href="#quiz" class="nav-link">Quiz</a></li>
+                    <li><a href="#escritorio" class="nav-link">Escritorio</a></li>
+                    <li><a href="#comandos" class="nav-link">Comandos</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <span class="theme-icon sun">☀</span>
+                    <span class="theme-icon moon">☾</span>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Menú de navegación">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <div class="hero-bg">
+                <div class="grid-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text">v2026.1.0</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="typewriter" data-text="GNU/Linux Hub"></span>
+                        <span class="cursor-blink">_</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Tu portal definitivo al universo Linux. Desde el primer comando hasta la compilación del kernel.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#que-es" class="btn btn-primary">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Iniciar Exploración</span>
+                        </a>
+                        <a href="#ruta" class="btn btn-secondary">
+                            <span class="btn-icon">⚡</span>
+                            <span class="btn-text">Ver Ruta de Aprendizaje</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">600+</span>
+                            <span class="stat-label">Distros</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Años de historia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Posibilidades</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ¿Qué es Linux? -->
+        <section class="section section-que-es" id="que-es">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01. Introducción</span>
+                    <h2 class="section-title">¿Qué es <span class="highlight">Linux</span>?</h2>
+                    <p class="section-description">
+                        Linux no es solo un sistema operativo, es una filosofía de software libre y código abierto que ha revolucionado la tecnología.
+                    </p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="info-card featured">
+                        <div class="card-icon">🐧</div>
+                        <h3 class="card-title">Definición</h3>
+                        <p class="card-text">
+                            Linux es un sistema operativo tipo <strong>Unix</strong> de código abierto que se distribuye bajo la licencia <strong>GPL (General Public License)</strong>. Fue creado por <strong>Linus Torvalds</strong> en 1991 como un proyecto personal mientras estudiaba en la Universidad de Helsinki.
+                        </p>
+                        <p class="card-text">
+                            A diferencia de Windows o macOS, Linux es <strong>modular</strong>: su corazón es el <strong>Kernel</strong> (núcleo), al cual se le añaden herramientas y aplicaciones para formar una distribución completa.
+                        </p>
+                    </div>
+
+                    <div class="timeline">
+                        <h3 class="timeline-title">Línea de Tiempo</h3>
+                        <div class="timeline-item">
+                            <span class="timeline-year">1969</span>
+                            <div class="timeline-content">
+                                <h4>Nace UNIX</h4>
+                                <p>AT&T Bell Labs desarrolla UNIX, el precursor de todos los sistemas tipo Unix.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">1983</span>
+                            <div class="timeline-content">
+                                <h4>Proyecto GNU</h4>
+                                <p>Richard Stallman inicia el proyecto GNU con el objetivo de crear un sistema operativo libre.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item highlight">
+                            <span class="timeline-year">1991</span>
+                            <div class="timeline-content">
+                                <h4>Nace Linux</h4>
+                                <p>Linus Torvalds publica la primera versión del kernel Linux (0.01).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">1993</span>
+                            <div class="timeline-content">
+                                <h4>Primeras Distros</h4>
+                                <p>Aparecen Slackware y Debian, las primeras distribuciones completas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2004</span>
+                            <div class="timeline-content">
+                                <h4>Ubuntu</h4>
+                                <p>Canonical lanza Ubuntu, revolucionando la accesibilidad de Linux.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-year">2026</span>
+                            <div class="timeline-content">
+                                <h4>Presente</h4>
+                                <p>Linux domina servidores, supercomputadoras, Android y la nube.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="philosophy-cards">
+                    <div class="philosophy-card">
+                        <div class="philo-icon">🔓</div>
+                        <h4>Libertad</h4>
+                        <p>Usa, estudia, modifica y distribuye el software libremente.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philo-icon">👁️</div>
+                        <h4>Transparencia</h4>
+                        <p>Código fuente disponible para auditación y mejora colectiva.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philo-icon">🤝</div>
+                        <h4>Comunidad</h4>
+                        <p>Desarrollo colaborativo por miles de programadores worldwide.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philo-icon">🔧</div>
+                        <h4>Personalización</h4>
+                        <p>Adapta cada aspecto del sistema a tus necesidades específicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kernel vs GNU -->
+        <section class="section section-kernel" id="kernel">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02. Arquitectura</span>
+                    <h2 class="section-title"><span class="highlight">Kernel</span> vs <span class="highlight-alt">GNU</span></h2>
+                    <p class="section-description">
+                        Entiende la diferencia entre el corazón del sistema y las herramientas que lo hacen usable.
+                    </p>
+                </div>
+
+                <div class="comparison-container">
+                    <div class="comparison-card kernel">
+                        <div class="card-header">
+                            <span class="card-tag">El Núcleo</span>
+                            <h3>Linux Kernel</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list">
+                                <li><span class="feature-icon">⚙️</span> Gestión de procesos y memoria</li>
+                                <li><span class="feature-icon">💾</span> Control de drivers y hardware</li>
+                                <li><span class="feature-icon">🔌</span> Sistema de archivos</li>
+                                <li><span class="feature-icon">🌐</span> Stack de red y comunicaciones</li>
+                                <li><span class="feature-icon">🔒</span> Seguridad y permisos del sistema</li>
+                            </ul>
+                            <div class="code-block">
+                                <code>$ uname -r<br>6.8.0-generic</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-connector">
+                        <div class="connector-line"></div>
+                        <span class="connector-text">+</span>
+                        <div class="connector-line"></div>
+                    </div>
+
+                    <div class="comparison-card gnu">
+                        <div class="card-header">
+                            <span class="card-tag">Las Herramientas</span>
+                            <h3>GNU Project</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list">
+                                <li><span class="feature-icon">⌨️</span> Bash shell y utilidades</li>
+                                <li><span class="feature-icon">🛠️</span> Compiladores (GCC)</li>
+                                <li><span class="feature-icon">📚</span> Bibliotecas del sistema (glibc)</li>
+                                <li><span class="feature-icon">📋</span> Herramientas básicas (ls, cp, mv)</li>
+                                <li><span class="feature-icon">🖥️</span> Entornos de escritorio</li>
+                            </ul>
+                            <div class="code-block">
+                                <code>$ gcc --version<br>gcc (GCC) 13.2.0</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3 class="result-title">= GNU/Linux</h3>
+                    <p class="result-text">
+                        El sistema operativo completo es la combinación del <strong>Kernel Linux</strong> + las herramientas del proyecto <strong>GNU</strong> + software adicional. Por eso muchos prefieren llamarlo <strong>GNU/Linux</strong> en lugar de solo Linux, reconociendo el trabajo de la Free Software Foundation.
+                    </p>
+                </div>
+
+                <div class="why-section">
+                    <h3 class="why-title">¿Por qué "GNU/Linux" y no solo "Linux"?</h3>
+                    <div class="why-grid">
+                        <div class="why-item">
+                            <span class="why-number">01</span>
+                            <p>Richard Stallman y la FSF argumentan que llamarlo solo "Linux" ignora el trabajo de GNU que hace el sistema usable.</p>
+                        </div>
+                        <div class="why-item">
+                            <span class="why-number">02</span>
+                            <p>El kernel Linux representa aproximadamente el 2% del código total de un sistema operativo típico.</p>
+                        </div>
+                        <div class="why-item">
+                            <span class="why-number">03</span>
+                            <p>En la práctica, la mayoría dice "Linux" por simplicidad, pero es importante conocer la historia completa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Árbol de Distros -->
+        <section class="section section-distros" id="distros">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03. Distribuciones</span>
+                    <h2 class="section-title">Árbol <span class="highlight">Genealógico</span></h2>
+                    <p class="section-description">
+                        Cada distro tiene raíces. Descubre de qué familia proviene tu Linux favorito.
+                    </p>
+                </div>
+
+                <div class="distro-tree">
+                    <!-- Nodo raíz -->
+                    <div class="tree-root">
+                        <div class="root-node">
+                            <span class="root-icon">🐧</span>
+                            <span class="root-text">Linux Kernel</span>
+                        </div>
+                    </div>
+
+                    <!-- Ramas principales -->
+                    <div class="tree-branches">
+                        <!-- Debian -->
+                        <div class="tree-branch">
+                            <div class="branch-connector"></div>
+                            <div class="distro-family debian">
+                                <div class="family-header">
+                                    <h3 class="family-name">Debian</h3>
+                                    <span class="family-year">1993</span>
+                                    <p class="family-desc">La base universal. Estabilidad y software libre puro.</p>
+                                </div>
+                                <div class="family-children">
+                                    <div class="distro-child">
+                                        <span class="child-name">Ubuntu</span>
+                                        <span class="child-year">2004</span>
+                                    </div>
+                                    <div class="distro-sub">
+                                        <div class="sub-item">Linux Mint</div>
+                                        <div class="sub-item">Pop!_OS</div>
+                                        <div class="sub-item">Elementary OS</div>
+                                        <div class="sub-item">Zorin OS</div>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">Kali Linux</span>
+                                        <span class="child-year">2013</span>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">Raspberry Pi OS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Red Hat -->
+                        <div class="tree-branch">
+                            <div class="branch-connector"></div>
+                            <div class="distro-family redhat">
+                                <div class="family-header">
+                                    <h3 class="family-name">Red Hat</h3>
+                                    <span class="family-year">1995</span>
+                                    <p class="family-desc">Orientada a empresas. Estándares industriales.</p>
+                                </div>
+                                <div class="family-children">
+                                    <div class="distro-child">
+                                        <span class="child-name">Fedora</span>
+                                        <span class="child-year">2003</span>
+                                    </div>
+                                    <div class="distro-child enterprise">
+                                        <span class="child-name">RHEL</span>
+                                        <span class="child-badge">Enterprise</span>
+                                    </div>
+                                    <div class="distro-sub">
+                                        <div class="sub-item">CentOS Stream</div>
+                                        <div class="sub-item">Rocky Linux</div>
+                                        <div class="sub-item">AlmaLinux</div>
+                                        <div class="sub-item">Oracle Linux</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arch -->
+                        <div class="tree-branch">
+                            <div class="branch-connector"></div>
+                            <div class="distro-family arch">
+                                <div class="family-header">
+                                    <h3 class="family-name">Arch Linux</h3>
+                                    <span class="family-year">2002</span>
+                                    <p class="family-desc">Rolling release. Simplicidad y control total.</p>
+                                </div>
+                                <div class="family-children">
+                                    <div class="distro-child">
+                                        <span class="child-name">Manjaro</span>
+                                        <span class="child-year">2011</span>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">EndeavourOS</span>
+                                        <span class="child-year">2019</span>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">Garuda Linux</span>
+                                    </div>
+                                    <div class="distro-sub">
+                                        <div class="sub-item">ArcoLinux</div>
+                                        <div class="sub-item">Artix Linux</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slackware -->
+                        <div class="tree-branch">
+                            <div class="branch-connector"></div>
+                            <div class="distro-family slackware">
+                                <div class="family-header">
+                                    <h3 class="family-name">Slackware</h3>
+                                    <span class="family-year">1993</span>
+                                    <p class="family-desc">La más antigua. Unix tradicional puro.</p>
+                                </div>
+                                <div class="family-children">
+                                    <div class="distro-child">
+                                        <span class="child-name">openSUSE</span>
+                                        <span class="child-year">2005</span>
+                                    </div>
+                                    <div class="distro-sub">
+                                        <div class="sub-item">Tumbleweed</div>
+                                        <div class="sub-item">Leap</div>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">Salix</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Independientes -->
+                        <div class="tree-branch">
+                            <div class="branch-connector"></div>
+                            <div class="distro-family independent">
+                                <div class="family-header">
+                                    <h3 class="family-name">Independientes</h3>
+                                    <span class="family-year">-</span>
+                                    <p class="family-desc">Distros con raíces únicas.</p>
+                                </div>
+                                <div class="family-children">
+                                    <div class="distro-child">
+                                        <span class="child-name">Gentoo</span>
+                                        <span class="child-year">2002</span>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">Alpine Linux</span>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">Void Linux</span>
+                                    </div>
+                                    <div class="distro-child">
+                                        <span class="child-name">NixOS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Distros -->
+        <section class="section section-top" id="top">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04. Clasificación</span>
+                    <h2 class="section-title">Top <span class="highlight">Distros</span></h2>
+                    <p class="section-description">
+                        Las mejores distribuciones según tu perfil y necesidades específicas.
+                    </p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tabs-header">
+                        <button class="tab-btn active" data-tab="casual">
+                            <span class="tab-icon">🏠</span>
+                            <span class="tab-text">Casual</span>
+                        </button>
+                        <button class="tab-btn" data-tab="developer">
+                            <span class="tab-icon">💻</span>
+                            <span class="tab-text">Developer</span>
+                        </button>
+                        <button class="tab-btn" data-tab="server">
+                            <span class="tab-icon">🖥️</span>
+                            <span class="tab-text">Servidor</span>
+                        </button>
+                        <button class="tab-btn" data-tab="enthusiast">
+                            <span class="tab-icon">🔥</span>
+                            <span class="tab-text">Entusiasta</span>
+                        </button>
+                    </div>
+
+                    <div class="tabs-content">
+                        <!-- Tab Casual -->
+                        <div class="tab-panel active" id="tab-casual">
+                            <div class="distro-grid">
+                                <div class="distro-card rank-1">
+                                    <div class="distro-rank">#1</div>
+                                    <div class="distro-info">
+                                        <h3>Linux Mint</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag easy">Fácil</span>
+                                            <span class="tag stable">Estable</span>
+                                        </div>
+                                        <p>La mejor opción para migrar de Windows. Interfaz familiar, codecs incluidos y estabilidad garantizada.</p>
+                                        <a href="https://linuxmint.com" target="_blank" rel="noopener" class="distro-link">linuxmint.com →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-2">
+                                    <div class="distro-rank">#2</div>
+                                    <div class="distro-info">
+                                        <h3>Ubuntu</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag easy">Fácil</span>
+                                            <span class="tag popular">Popular</span>
+                                        </div>
+                                        <p>La distro más conocida. Excelente soporte de hardware, comunidad masiva y documentación infinita.</p>
+                                        <a href="https://ubuntu.com" target="_blank" rel="noopener" class="distro-link">ubuntu.com →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-3">
+                                    <div class="distro-rank">#3</div>
+                                    <div class="distro-info">
+                                        <h3>Zorin OS</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag easy">Fácil</span>
+                                            <span class="tag windows-like">Win-like</span>
+                                        </div>
+                                        <p>Diseñada específicamente para usuarios de Windows. Interfaz idéntica y transición sin fricción.</p>
+                                        <a href="https://zorin.com" target="_blank" rel="noopener" class="distro-link">zorin.com →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card">
+                                    <div class="distro-rank">#4</div>
+                                    <div class="distro-info">
+                                        <h3>Elementary OS</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag elegant">Elegante</span>
+                                            <span class="tag mac-like">Mac-like</span>
+                                        </div>
+                                        <p>Estética de macOS con la libertad de Linux. Perfecta para diseñadores y creativos.</p>
+                                        <a href="https://elementary.io" target="_blank" rel="noopener" class="distro-link">elementary.io →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Developer -->
+                        <div class="tab-panel" id="tab-developer">
+                            <div class="distro-grid">
+                                <div class="distro-card rank-1">
+                                    <div class="distro-rank">#1</div>
+                                    <div class="distro-info">
+                                        <h3>Fedora Workstation</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag cutting">Cutting-edge</span>
+                                            <span class="tag dev">Dev-focused</span>
+                                        </div>
+                                        <p>Tecnologías de vanguardia, containers nativos, y el mejor soporte para desarrollo moderno.</p>
+                                        <a href="https://fedoraproject.org" target="_blank" rel="noopener" class="distro-link">fedoraproject.org →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-2">
+                                    <div class="distro-rank">#2</div>
+                                    <div class="distro-info">
+                                        <h3>Pop!_OS</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag gaming">Gaming</span>
+                                            <span class="tag tiling">Tiling WM</span>
+                                        </div>
+                                        <p>Desarrollada por System76. Optimizada para productividad, con tiling window manager integrado.</p>
+                                        <a href="https://pop.system76.com" target="_blank" rel="noopener" class="distro-link">pop.system76.com →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-3">
+                                    <div class="distro-rank">#3</div>
+                                    <div class="distro-info">
+                                        <h3>Manjaro</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag rolling">Rolling</span>
+                                            <span class="tag aur">AUR</span>
+                                        </div>
+                                        <p>Acceso a Arch sin la instalación complicada. Repositorios AUR masivos para cualquier software.</p>
+                                        <a href="https://manjaro.org" target="_blank" rel="noopener" class="distro-link">manjaro.org →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card">
+                                    <div class="distro-rank">#4</div>
+                                    <div class="distro-info">
+                                        <h3>openSUSE Tumbleweed</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag stable">Estable</span>
+                                            <span class="tag rolling">Rolling</span>
+                                        </div>
+                                        <p>Rolling release probado exhaustivamente antes de publicar. Ideal para desarrolladores que necesitan lo último pero estable.</p>
+                                        <a href="https://opensuse.org" target="_blank" rel="noopener" class="distro-link">opensuse.org →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Server -->
+                        <div class="tab-panel" id="tab-server">
+                            <div class="distro-grid">
+                                <div class="distro-card rank-1">
+                                    <div class="distro-rank">#1</div>
+                                    <div class="distro-info">
+                                        <h3>Ubuntu Server LTS</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag enterprise">Enterprise</span>
+                                            <span class="tag lts">5 años soporte</span>
+                                        </div>
+                                        <p>La elección por defecto en la nube. Soporte extendido, certificaciones y compatibilidad con todo.</p>
+                                        <a href="https://ubuntu.com/server" target="_blank" rel="noopener" class="distro-link">ubuntu.com/server →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-2">
+                                    <div class="distro-rank">#2</div>
+                                    <div class="distro-info">
+                                        <h3>RHEL</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag paid">Pago</span>
+                                            <span class="tag certified">Certificado</span>
+                                        </div>
+                                        <p>El estándar corporativo. Soporte profesional, certificaciones de hardware y software garantizado.</p>
+                                        <a href="https://redhat.com" target="_blank" rel="noopener" class="distro-link">redhat.com →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-3">
+                                    <div class="distro-rank">#3</div>
+                                    <div class="distro-info">
+                                        <h3>Debian</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag rock">Roca sólida</span>
+                                            <span class="tag free">100% Libre</span>
+                                        </div>
+                                        <p>Estabilidad extrema. Muchas empresas usan Debian directamente en servidores críticos.</p>
+                                        <a href="https://debian.org" target="_blank" rel="noopener" class="distro-link">debian.org →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card">
+                                    <div class="distro-rank">#4</div>
+                                    <div class="distro-info">
+                                        <h3>Rocky Linux / AlmaLinux</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag rhel">RHEL-compatible</span>
+                                            <span class="tag free">Gratis</span>
+                                        </div>
+                                        <p>Reemplazos 1:1 de CentOS. Binariamente compatibles con RHEL pero completamente gratuitos.</p>
+                                        <a href="https://rockylinux.org" target="_blank" rel="noopener" class="distro-link">rockylinux.org →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab Enthusiast -->
+                        <div class="tab-panel" id="tab-enthusiast">
+                            <div class="distro-grid">
+                                <div class="distro-card rank-1">
+                                    <div class="distro-rank">#1</div>
+                                    <div class="distro-info">
+                                        <h3>Arch Linux</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag diy">DIY</span>
+                                            <span class="tag wiki">Wiki épica</span>
+                                        </div>
+                                        <p>Construye tu sistema desde cero. Aprenderás más sobre Linux en una instalación de Arch que en años de uso.</p>
+                                        <a href="https://archlinux.org" target="_blank" rel="noopener" class="distro-link">archlinux.org →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-2">
+                                    <div class="distro-rank">#2</div>
+                                    <div class="distro-info">
+                                        <h3>Gentoo</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag compile">Source-based</span>
+                                            <span class="tag optimize">Optimizado</span>
+                                        </div>
+                                        <p>Compila TODO desde fuentes. Control absoluto y máximo rendimiento, pero requiere paciencia.</p>
+                                        <a href="https://gentoo.org" target="_blank" rel="noopener" class="distro-link">gentoo.org →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card rank-3">
+                                    <div class="distro-rank">#3</div>
+                                    <div class="distro-info">
+                                        <h3>Void Linux</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag init">runit</span>
+                                            <span class="tag musl">musl libc</span>
+                                        </div>
+                                        <p>No usa systemd. Diseñada desde cero con principios modernos pero tradicionales.</p>
+                                        <a href="https://voidlinux.org" target="_blank" rel="noopener" class="distro-link">voidlinux.org →</a>
+                                    </div>
+                                </div>
+                                <div class="distro-card">
+                                    <div class="distro-rank">#4</div>
+                                    <div class="distro-info">
+                                        <h3>NixOS</h3>
+                                        <div class="distro-tags">
+                                            <span class="tag declarative">Declarative</span>
+                                            <span class="tag reproducible">Reproducible</span>
+                                        </div>
+                                        <p>Configuración puramente declarativa. Sistemas reproducibles y gestión de paquetes funcional.</p>
+                                        <a href="https://nixos.org" target="_blank" rel="noopener" class="distro-link">nixos.org →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ruta de Aprendizaje -->
+        <section class="section section-ruta" id="ruta">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05. Roadmap</span>
+                    <h2 class="section-title">Ruta de <span class="highlight">Aprendizaje</span></h2>
+                    <p class="section-description">
+                        Tu camino desde el primer doble clic hasta compilar el kernel desde cero.
+                    </p>
+                </div>
+
+                <div class="roadmap-container">
+                    <div class="roadmap-line"></div>
+
+                    <!-- Nivel 1: Principiante -->
+                    <div class="roadmap-level">
+                        <div class="level-marker">
+                            <span class="level-number">01</span>
+                        </div>
+                        <div class="level-content">
+                            <div class="level-header">
+                                <h3 class="level-title">Principiante</h3>
+                                <span class="level-badge">Inicio</span>
+                            </div>
+                            <p class="level-desc">
+                                Dominarás los conceptos básicos, la interfaz gráfica y los comandos esenciales. Foco en la familiarización.
+                            </p>
+                            <div class="recommendation">
+                                <h4 class="reco-title">💡 Recomendado para:</h4>
+                                <p>Usuarios de Windows/macOS que quieren probar Linux sin frustración.</p>
+                            </div>
+                            <div class="distro-recommendations">
+                                <div class="reco-distro">
+                                    <span class="reco-name">Linux Mint</span>
+                                    <span class="reco-reason">Interfaz familiar</span>
+                                </div>
+                                <div class="reco-distro">
+                                    <span class="reco-name">Ubuntu</span>
+                                    <span class="reco-reason">Documentación infinita</span>
+                                </div>
+                                <div class="reco-distro">
+                                    <span class="reco-name">Zorin OS</span>
+                                    <span class="reco-reason">Transición suave</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nivel 2: Intermedio -->
+                    <div class="roadmap-level">
+                        <div class="level-marker">
+                            <span class="level-number">02</span>
+                        </div>
+                        <div class="level-content">
+                            <div class="level-header">
+                                <h3 class="level-title">Intermedio</h3>
+                                <span class="level-badge intermediate">Intermedio</span>
+                            </div>
+                            <p class="level-desc">
+                                Comenzarás a personalizar profundamente, usarás más la terminal, configurarás servidores locales y entenderás el sistema de archivos.
+                            </p>
+                            <div class="recommendation">
+                                <h4 class="reco-title">💡 Recomendado para:</h4>
+                                <p>Desarrolladores, gamers de Linux y usuarios que quieren más control.</p>
+                            </div>
+                            <div class="distro-recommendations">
+                                <div class="reco-distro">
+                                    <span class="reco-name">Fedora</span>
+                                    <span class="reco-reason">Software moderno</span>
+                                </div>
+                                <div class="reco-distro">
+                                    <span class="reco-name">Manjaro</span>
+                                    <span class="reco-reason">Acceso a AUR</span>
+                                </div>
+                                <div class="reco-distro">
+                                    <span class="reco-name">Pop!_OS</span>
+                                    <span class="reco-reason">Productividad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nivel 3: Avanzado -->
+                    <div class="roadmap-level">
+                        <div class="level-marker">
+                            <span class="level-number">03</span>
+                        </div>
+                        <div class="level-content">
+                            <div class="level-header">
+                                <h3 class="level-title">Avanzado</h3>
+                                <span class="level-badge advanced">Avanzado</span>
+                            </div>
+                            <p class="level-desc">
+                                Compilación desde fuentes, gestión manual de dependencias, configuración de kernel, window managers minimalistas y administración de sistemas complejos.
+                            </p>
+                            <div class="recommendation">
+                                <h4 class="reco-title">💡 Recomendado para:</h4>
+                                <p>Entusiastas, administradores de sistemas y puristas del software libre.</p>
+                            </div>
+                            <div class="distro-recommendations">
+                                <div class="reco-distro">
+                                    <span class="reco-name">Arch Linux</span>
+                                    <span class="reco-reason">DIY total</span>
+                                </div>
+                                <div class="reco-distro">
+                                    <span class="reco-name">Gentoo</span>
+                                    <span class="reco-reason">Compilación</span>
+                                </div>
+                                <div class="reco-distro">
+                                    <span class="reco-name">LFS</span>
+                                    <span class="reco-reason">Linux From Scratch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-destination">
+                    <div class="destination-content">
+                        <span class="destination-icon">🏁</span>
+                        <h3>El Destino Final</h3>
+                        <p>
+                            No existe una "mejor distro". El verdadero objetivo es entender que <strong>Linux es libertad</strong>. Puedes cambiar de distro, de entorno de escritorio, de kernel... o crear tu propia distribución. El conocimiento acumulado te permite adaptar cualquier sistema a tus necesidades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz: ¿Qué distro eres? -->
+        <section class="section section-quiz" id="quiz">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">06. Quiz</span>
+                    <h2 class="section-title">¿Qué <span class="highlight">Distro</span> Eres?</h2>
+                    <p class="section-description">
+                        Responde 6 preguntas rápidas y descubre cuál distribución Linux se adapta mejor a tu perfil y necesidades.
+                    </p>
+                </div>
+
+                <div class="quiz-container" id="quiz-container">
+                    <!-- Pantalla de Inicio -->
+                    <div class="quiz-start" id="quiz-start">
+                        <div class="quiz-intro">
+                            <div class="quiz-icon">🎯</div>
+                            <h3>Descubre tu Distro Ideal</h3>
+                            <p>No estás seguro de por dónde empezar con Linux? Este quiz te ayudará a encontrar la distribución perfecta según tu experiencia, hardware y objetivos.</p>
+                            <ul class="quiz-features">
+                                <li><span class="feature-check">✓</span> 6 preguntas rápidas (2 minutos)</li>
+                                <li><span class="feature-check">✓</span> Recomendación personalizada</li>
+                                <li><span class="feature-check">✓</span> Enlace directo de descarga</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary quiz-btn" id="start-quiz">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Iniciar Quiz</span>
+                        </button>
+                    </div>
+
+                    <!-- Preguntas -->
+                    <div class="quiz-questions" id="quiz-questions" style="display: none;">
+                        <div class="quiz-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                            <span class="progress-text">Pregunta <span id="current-question">1</span> de 6</span>
+                        </div>
+
+                        <div class="question-container" id="question-container">
+                            <!-- Las preguntas se cargan dinámicamente -->
+                        </div>
+
+                        <div class="quiz-navigation">
+                            <button class="btn btn-secondary" id="prev-question" disabled>
+                                <span class="btn-icon">←</span> Anterior
+                            </button>
+                            <button class="btn btn-primary" id="next-question" disabled>
+                                Siguiente <span class="btn-icon">→</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Resultado -->
+                    <div class="quiz-result" id="quiz-result" style="display: none;">
+                        <div class="result-card">
+                            <div class="result-header">
+                                <span class="result-badge">Tu Recomendación</span>
+                                <div class="result-icon" id="result-icon">🐧</div>
+                                <h3 class="result-name" id="result-name">Ubuntu</h3>
+                                <p class="result-tagline" id="result-tagline">La distro más popular para principiantes</p>
+                            </div>
+                            
+                            <div class="result-details">
+                                <div class="result-description" id="result-description">
+                                    <!-- Descripción dinámica -->
+                                </div>
+                                
+                                <div class="result-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-label">Dificultad</span>
+                                        <div class="stat-bar" id="difficulty-bar">
+                                            <div class="stat-fill easy"></div>
+                                        </div>
+                                        <span class="stat-value" id="difficulty-text">Fácil</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-label">Recursos</span>
+                                        <div class="stat-bar" id="resources-bar">
+                                            <div class="stat-fill medium"></div>
+                                        </div>
+                                        <span class="stat-value" id="resources-text">Medio</span>
+                                    </div>
+                                </div>
+
+                                <div class="result-pros">
+                                    <h4>✨ Ventajas</h4>
+                                    <ul id="result-pros">
+                                        <!-- Lista dinámica -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="result-actions">
+                                <a href="#" class="btn btn-primary" id="result-download" target="_blank" rel="noopener">
+                                    <span class="btn-icon">⬇</span>
+                                    <span class="btn-text">Descargar</span>
+                                </a>
+                                <button class="btn btn-secondary" id="restart-quiz">
+                                    <span class="btn-icon">↻</span>
+                                    <span class="btn-text">Repetir Quiz</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="alternative-distros">
+                            <h4>También podría interesarte:</h4>
+                            <div class="alt-distro-list" id="alt-distro-list">
+                                <!-- Alternativas dinámicas -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entornos de Escritorio -->
+        <section class="section section-escritorio" id="escritorio">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">07. Interfaces</span>
+                    <h2 class="section-title">Entornos de <span class="highlight">Escritorio</span></h2>
+                    <p class="section-description">
+                        El rostro de tu Linux. Elige según tus necesidades de recursos y personalización.
+                    </p>
+                </div>
+
+                <div class="de-comparison">
+                    <div class="comparison-table">
+                        <div class="table-header">
+                            <div class="th de-name">Entorno</div>
+                            <div class="th de-resources">Recursos</div>
+                            <div class="th de-custom">Personalización</div>
+                            <div class="th de-ease">Facilidad</div>
+                            <div class="th de-best">Ideal para</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="td de-name">
+                                <span class="de-icon">🖥️</span>
+                                <span class="de-title">GNOME</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar high"></div>
+                                <span>Alto</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★☆☆☆</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge easy">Fácil</span>
+                            </div>
+                            <div class="td de-best">Productividad, táctil</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="td de-name">
+                                <span class="de-icon">⚙️</span>
+                                <span class="de-title">KDE Plasma</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar medium"></div>
+                                <span>Medio</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★★★★</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge medium">Medio</span>
+                            </div>
+                            <div class="td de-best">Personalización extrema</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="td de-name">
+                                <span class="de-icon">🪶</span>
+                                <span class="de-title">XFCE</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar low"></div>
+                                <span>Bajo</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★★☆☆</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge easy">Fácil</span>
+                            </div>
+                            <div class="td de-best">Hardware antiguo, estabilidad</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="td de-name">
+                                <span class="de-icon">🍃</span>
+                                <span class="de-title">MATE</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar low"></div>
+                                <span>Bajo</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★☆☆☆</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge easy">Fácil</span>
+                            </div>
+                            <div class="td de-best">Usuarios de GNOME 2, nostalgia</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="td de-name">
+                                <span class="de-icon">🍎</span>
+                                <span class="de-title">Cinnamon</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar medium"></div>
+                                <span>Medio</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★★☆☆</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge easy">Fácil</span>
+                            </div>
+                            <div class="td de-best">Usuarios de Windows</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="td de-name">
+                                <span class="de-icon">📐</span>
+                                <span class="de-title">LXQt</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar very-low"></div>
+                                <span>Muy bajo</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★☆☆☆</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge medium">Medio</span>
+                            </div>
+                            <div class="td de-best">Equipos muy limitados</div>
+                        </div>
+
+                        <div class="table-row highlight">
+                            <div class="td de-name">
+                                <span class="de-icon">🪟</span>
+                                <span class="de-title">i3 / Sway</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar very-low"></div>
+                                <span>Mínimo</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★★★★</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge hard">Difícil</span>
+                            </div>
+                            <div class="td de-best">Productividad extrema, teclado</div>
+                        </div>
+
+                        <div class="table-row">
+                            <div class="td de-name">
+                                <span class="de-icon">⌨️</span>
+                                <span class="de-title">Awesome</span>
+                            </div>
+                            <div class="td de-resources">
+                                <div class="resource-bar very-low"></div>
+                                <span>Mínimo</span>
+                            </div>
+                            <div class="td de-custom">
+                                <div class="custom-stars">★★★★☆</div>
+                            </div>
+                            <div class="td de-ease">
+                                <span class="ease-badge hard">Difícil</span>
+                            </div>
+                            <div class="td de-best">Desarrolladores avanzados</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="de-recommendation">
+                    <h3 class="reco-heading">🎯 Recomendación Rápida</h3>
+                    <div class="reco-grid">
+                        <div class="reco-item">
+                            <span class="reco-q">¿Vienes de Windows?</span>
+                            <span class="reco-a">→ Cinnamon o KDE Plasma</span>
+                        </div>
+                        <div class="reco-item">
+                            <span class="reco-q">¿Vienes de macOS?</span>
+                            <span class="reco-a">→ GNOME o Elementary</span>
+                        </div>
+                        <div class="reco-item">
+                            <span class="reco-q">¿Hardware antiguo?</span>
+                            <span class="reco-a">→ XFCE o LXQt</span>
+                        </div>
+                        <div class="reco-item">
+                            <span class="reco-q">¿Productividad máxima?</span>
+                            <span class="reco-a">→ i3, Sway o Awesome</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Casos de Uso -->
+        <section class="section section-casos" id="casos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">08. Aplicaciones</span>
+                    <h2 class="section-title">Casos de <span class="highlight">Uso</span></h2>
+                    <p class="section-description">
+                        Linux está en todas partes. Descubre dónde brilla este sistema operativo.
+                    </p>
+                </div>
+
+                <div class="use-cases-grid">
+                    <div class="use-case-card">
+                        <div class="case-icon">🖥️</div>
+                        <h3 class="case-title">Servidores</h3>
+                        <p class="case-desc">
+                            El 96.3% de los servidores top 1 millón ejecutan Linux. Su estabilidad, seguridad y eficiencia lo hacen ideal para infraestructura crítica.
+                        </p>
+                        <ul class="case-features">
+                            <li>Uptime de años sin reiniciar</li>
+                            <li>Gestión remota eficiente</li>
+                            <li>Virtualización nativa</li>
+                            <li>Contenedores (Docker, Kubernetes)</li>
+                        </ul>
+                    </div>
+
+                    <div class="use-case-card">
+                        <div class="case-icon">💻</div>
+                        <h3 class="case-title">Desarrollo</h3>
+                        <p class="case-desc">
+                            El entorno preferido por desarrolladores. Herramientas nativas, compatibilidad total con estándares y sin restricciones.
+                        </p>
+                        <ul class="case-features">
+                            <li>Git nativo</li>
+                            <li>Containers sin overhead</li>
+                            <li>Lenguajes preinstalados</li>
+                            <li>IDEs potentes (VS Code, JetBrains)</li>
+                        </ul>
+                    </div>
+
+                    <div class="use-case-card">
+                        <div class="case-icon">🎮</div>
+                        <h3 class="case-title">Gaming</h3>
+                        <p class="case-desc">
+                            Proton y Steam han revolucionado el gaming en Linux. 80%+ de juegos Steam son jugables, muchos con rendimiento nativo.
+                        </p>
+                        <ul class="case-features">
+                            <li>Steam + Proton</li>
+                            <li>Lutris para launchers</li>
+                            <li>Mejor rendimiento en algunos títulos</li>
+                            <li>Anti-cheat funcionando</li>
+                        </ul>
+                    </div>
+
+                    <div class="use-case-card">
+                        <div class="case-icon">🔒</div>
+                        <h3 class="case-title">Ciberseguridad</h3>
+                        <p class="case-desc">
+                            Desde Kali Linux para pentesting hasta Qubes OS para anonimato. Control total sobre tu privacidad.
+                        </p>
+                        <ul class="case-features">
+                            <li>Kali Linux (pentesting)</li>
+                            <li>Tails (anonimato)</li>
+                            <li>Qubes OS (aislamiento)</li>
+                            <li>WireGuard/OpenVPN nativos</li>
+                        </ul>
+                    </div>
+
+                    <div class="use-case-card">
+                        <div class="case-icon">🤖</div>
+                        <h3 class="case-title">IoT y Embedded</h3>
+                        <p class="case-desc">
+                            Desde Raspberry Pi hasta supercomputadoras. Linux domina el Internet de las Cosas y sistemas embebidos.
+                        </p>
+                        <ul class="case-features">
+                            <li>Raspberry Pi OS</li>
+                            <li>Arduino IDE</li>
+                            <li>ROS (robots)</li>
+                            <li>Contenedores ligeros (Alpine)</li>
+                        </ul>
+                    </div>
+
+                    <div class="use-case-card">
+                        <div class="case-icon">🎨</div>
+                        <h3 class="case-title">Creatividad</h3>
+                        <p class="case-desc">
+                            Suite completa de software creativo open source. Blender, GIMP, Inkscape, Ardour y más a nivel profesional.
+                        </p>
+                        <ul class="case-features">
+                            <li>Blender (3D, industria)</li>
+                            <li>GIMP/Photoshop alternativas</li>
+                            <li>DaVinci Resolve (edición video)</li>
+                            <li>Ardour/LMMS (audio)</li>
+                        </ul>
+                    </div>
+
+                    <div class="use-case-card highlight">
+                        <div class="case-icon">📱</div>
+                        <h3 class="case-title">Android</h3>
+                        <p class="case-desc">
+                            <strong>Sí, Android usa el kernel Linux.</strong> Es la prueba del dominio de Linux en dispositivos móviles.
+                        </p>
+                        <ul class="case-features">
+                            <li>2.5B+ dispositivos activos</li>
+                            <li>70%+ del mercado móvil</li>
+                            <li>Kernel Linux modificado</li>
+                            <li>Apps nativas en Java/Kotlin</li>
+                        </ul>
+                    </div>
+
+                    <div class="use-case-card">
+                        <div class="case-icon">☁️</div>
+                        <h3 class="case-title">Cloud & Big Data</h3>
+                        <p class="case-desc">
+                            AWS, Google Cloud, Azure... todos corren Linux. Hadoop, Spark y toda la infraestructura de datos moderna.
+                        </p>
+                        <ul class="case-features">
+                            <li>AWS EC2 (Linux por defecto)</li>
+                            <li>Kubernetes (creado por Google)</li>
+                            <li>Hadoop/Spark</li>
+                            <li>Serverless functions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comandos Esenciales -->
+        <section class="section section-comandos" id="comandos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">09. Terminal</span>
+                    <h2 class="section-title">Comandos <span class="highlight">Esenciales</span></h2>
+                    <p class="section-description">
+                        La terminal es tu superpoder. Domina estos comandos y controla Linux como un profesional.
+                    </p>
+                </div>
+
+                <div class="terminal-container">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn close"></span>
+                            <span class="term-btn minimize"></span>
+                            <span class="term-btn maximize"></span>
+                        </div>
+                        <span class="terminal-title">user@linux-hub:~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-output">
+                            <p class="terminal-line">
+                                <span class="prompt">$</span> <span class="command-text"># Bienvenido a GNU/Linux Hub - Guía de Comandos</span>
+                            </p>
+                        </div>
+
+                        <div class="commands-table">
+                            <div class="cmd-category">
+                                <h3 class="category-title">📁 Navegación</h3>
+                                <div class="cmd-list">
+                                    <div class="cmd-row" data-cmd="ls">
+                                        <code class="cmd-code">ls</code>
+                                        <span class="cmd-desc">Listar archivos y directorios</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="cd">
+                                        <code class="cmd-code">cd &lt;directorio&gt;</code>
+                                        <span class="cmd-desc">Cambiar de directorio</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="pwd">
+                                        <code class="cmd-code">pwd</code>
+                                        <span class="cmd-desc">Mostrar directorio actual</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="tree">
+                                        <code class="cmd-code">tree</code>
+                                        <span class="cmd-desc">Mostrar árbol de directorios</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cmd-category">
+                                <h3 class="category-title">📄 Archivos</h3>
+                                <div class="cmd-list">
+                                    <div class="cmd-row" data-cmd="cp">
+                                        <code class="cmd-code">cp &lt;origen&gt; &lt;destino&gt;</code>
+                                        <span class="cmd-desc">Copiar archivos</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="mv">
+                                        <code class="cmd-code">mv &lt;origen&gt; &lt;destino&gt;</code>
+                                        <span class="cmd-desc">Mover o renombrar</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="rm">
+                                        <code class="cmd-code">rm &lt;archivo&gt;</code>
+                                        <span class="cmd-desc">Eliminar archivo</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="mkdir">
+                                        <code class="cmd-code">mkdir &lt;nombre&gt;</code>
+                                        <span class="cmd-desc">Crear directorio</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="touch">
+                                        <code class="cmd-code">touch &lt;archivo&gt;</code>
+                                        <span class="cmd-desc">Crear archivo vacío</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cmd-category">
+                                <h3 class="category-title">🔐 Permisos</h3>
+                                <div class="cmd-list">
+                                    <div class="cmd-row" data-cmd="chmod">
+                                        <code class="cmd-code">chmod &lt;permisos&gt; &lt;archivo&gt;</code>
+                                        <span class="cmd-desc">Cambiar permisos</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="chown">
+                                        <code class="cmd-code">chown &lt;usuario&gt; &lt;archivo&gt;</code>
+                                        <span class="cmd-desc">Cambiar propietario</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="sudo">
+                                        <code class="cmd-code">sudo &lt;comando&gt;</code>
+                                        <span class="cmd-desc">Ejecutar como root</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cmd-category">
+                                <h3 class="category-title">⚙️ Sistema</h3>
+                                <div class="cmd-list">
+                                    <div class="cmd-row" data-cmd="ps">
+                                        <code class="cmd-code">ps aux</code>
+                                        <span class="cmd-desc">Listar procesos</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="top">
+                                        <code class="cmd-code">top</code>
+                                        <span class="cmd-desc">Monitor de recursos</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="df">
+                                        <code class="cmd-code">df -h</code>
+                                        <span class="cmd-desc">Espacio en disco</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="du">
+                                        <code class="cmd-code">du -sh &lt;directorio&gt;</code>
+                                        <span class="cmd-desc">Tamaño de carpeta</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="free">
+                                        <code class="cmd-code">free -h</code>
+                                        <span class="cmd-desc">Memoria RAM</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cmd-category">
+                                <h3 class="category-title">🌐 Red</h3>
+                                <div class="cmd-list">
+                                    <div class="cmd-row" data-cmd="ping">
+                                        <code class="cmd-code">ping &lt;host&gt;</code>
+                                        <span class="cmd-desc">Test de conectividad</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="ip">
+                                        <code class="cmd-code">ip addr</code>
+                                        <span class="cmd-desc">Configuración de red</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="curl">
+                                        <code class="cmd-code">curl &lt;url&gt;</code>
+                                        <span class="cmd-desc">Descargar/Transferir</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="wget">
+                                        <code class="cmd-code">wget &lt;url&gt;</code>
+                                        <span class="cmd-desc">Descargar archivos</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="ss">
+                                        <code class="cmd-code">ss -tuln</code>
+                                        <span class="cmd-desc">Puertos abiertos</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cmd-category">
+                                <h3 class="category-title">📦 Paquetes</h3>
+                                <div class="cmd-list">
+                                    <div class="cmd-row" data-cmd="apt">
+                                        <code class="cmd-code">apt install &lt;paquete&gt;</code>
+                                        <span class="cmd-desc">Instalar (Debian/Ubuntu)</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="dnf">
+                                        <code class="cmd-code">dnf install &lt;paquete&gt;</code>
+                                        <span class="cmd-desc">Instalar (Fedora/RHEL)</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="pacman">
+                                        <code class="cmd-code">pacman -S &lt;paquete&gt;</code>
+                                        <span class="cmd-desc">Instalar (Arch)</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="snap">
+                                        <code class="cmd-code">snap install &lt;app&gt;</code>
+                                        <span class="cmd-desc">Instalar Snap</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                    <div class="cmd-row" data-cmd="flatpak">
+                                        <code class="cmd-code">flatpak install &lt;app&gt;</code>
+                                        <span class="cmd-desc">Instalar Flatpak</span>
+                                        <button class="cmd-copy" title="Copiar">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="commands-tips">
+                    <h3 class="tips-title">💡 Tips Pro</h3>
+                    <div class="tips-grid">
+                        <div class="tip-card">
+                            <span class="tip-icon">⌨️</span>
+                            <p><strong>Tab</strong> para autocompletar archivos y comandos</p>
+                        </div>
+                        <div class="tip-card">
+                            <span class="tip-icon">⬆️</span>
+                            <p><strong>Flecha arriba</strong> para comandos anteriores</p>
+                        </div>
+                        <div class="tip-card">
+                            <span class="tip-icon">🛑</span>
+                            <p><strong>Ctrl+C</strong> para detener proceso actual</p>
+                        </div>
+                        <div class="tip-card">
+                            <span class="tip-icon">📋</span>
+                            <p><strong>Ctrl+Shift+C/V</strong> copiar/pegar en terminal</p>
+                        </div>
+                        <div class="tip-card">
+                            <span class="tip-icon">🏠</span>
+                            <p><strong>~</strong> es shortcut de tu directorio home</p>
+                        </div>
+                        <div class="tip-card">
+                            <span class="tip-icon">🔍</span>
+                            <p><strong>man &lt;comando&gt;</strong> para ver manual completo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section section-faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">10. FAQ</span>
+                    <h2 class="section-title">Preguntas <span class="highlight">Frecuentes</span></h2>
+                    <p class="section-description">
+                        Las dudas más comunes de quienes inician en el mundo Linux.
+                    </p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">❓</span>
+                            <span class="faq-text">¿Linux es gratis?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>Sí, la mayoría de distribuciones Linux son gratuitas.</strong> El término correcto es "software libre", que significa que tienes la libertad de usar, estudiar, modificar y distribuir el software. Algunas empresas ofrecen versiones de pago con soporte técnico (como RHEL), pero el software en sí es libre y existen alternativas gratuitas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">🎮</span>
+                            <span class="faq-text">¿Puedo jugar en Linux?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>¡Absolutamente sí!</strong> Gracias a <strong>Proton</strong> (desarrollado por Valve) y <strong>Wine</strong>, más del 80% de los juegos de Steam funcionan en Linux. Títulos AAA como Cyberpunk 2077, Elden Ring y Counter-Strike 2 funcionan perfectamente. Excepciones: algunos juegos con anti-cheat problemáticos, aunque la situación mejora constantemente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">💼</span>
+                            <span class="faq-text">¿Necesito saber programar para usar Linux?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>No para nada.</strong> Distribuciones como Linux Mint, Ubuntu o Zorin OS ofrecen experiencias tan amigables como Windows. Puedes usar Linux toda tu vida sin escribir una línea de código. Sin embargo, conocer la terminal te dará superpoderes y control total sobre tu sistema.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">🔒</span>
+                            <span class="faq-text">¿Linux es más seguro que Windows?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>En general, sí.</strong> Linux tiene una arquitectura de permisos más estricta, menor cuota de mercado (menos objetivo para malware), y actualizaciones de seguridad más rápidas. Sin embargo, <strong>no es inmune</strong>. La seguridad también depende de las prácticas del usuario: usar contraseñas fuertes, mantener el sistema actualizado y no ejecutar software desconocido.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">💿</span>
+                            <span class="faq-text">¿Puedo probar Linux sin instalarlo?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>¡Sí, con un Live USB!</strong> Todas las distribuciones ofrecen modo "Live" que permite arrancar el sistema completo desde un USB sin tocar tu disco duro. Es la forma perfecta de probar antes de instalar. Solo necesitas una memoria USB de 4GB+ y software como Rufus (Windows) o Etcher (cualquier OS).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">🔄</span>
+                            <span class="faq-text">¿Puedo tener Windows y Linux en el mismo PC?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>Sí, es "dual boot".</strong> Puedes instalar ambos sistemas y elegir cuál iniciar al encender el PC. Linux incluye gestores de arranque (GRUB) que detectan automáticamente Windows. Recomendación: instala Windows primero, luego Linux, para evitar problemas de gestor de arranque.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">🤔</span>
+                            <span class="faq-text">¿Cuál es la mejor distro para empezar?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>Linux Mint</strong> es la recomendación más común para principiantes: interfaz similar a Windows, todo funciona "out of the box", codecs multimedia incluidos, y excelente documentación. <strong>Ubuntu</strong> es otra excelente opción con comunidad masiva. Ambas te permiten aprender sin frustración.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span class="faq-icon">⏱️</span>
+                            <span class="faq-text">¿Cuánto tiempo lleva aprender Linux?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                <strong>Depende de tus objetivos:</strong> Para usarlo como escritorio cotidiano, unos días. Para sentirte cómodo con la terminal, semanas. Para dominar la administración de sistemas, meses o años. La curva de aprendizaje inicial es mayor que Windows, pero las recompensas en control y eficiencia son inmensas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recursos -->
+        <section class="section section-recursos" id="recursos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">11. Recursos</span>
+                    <h2 class="section-title">Enlaces <span class="highlight">Oficiales</span></h2>
+                    <p class="section-description">
+                        Documentación y sitios oficiales de las principales distribuciones.
+                    </p>
+                </div>
+
+                <div class="resources-grid">
+                    <div class="resource-category">
+                        <h3 class="category-title">Familia Debian</h3>
+                        <ul class="resource-list">
+                            <li><a href="https://debian.org" target="_blank" rel="noopener">debian.org</a></li>
+                            <li><a href="https://ubuntu.com" target="_blank" rel="noopener">ubuntu.com</a></li>
+                            <li><a href="https://linuxmint.com" target="_blank" rel="noopener">linuxmint.com</a></li>
+                            <li><a href="https://pop.system76.com" target="_blank" rel="noopener">pop.system76.com</a></li>
+                            <li><a href="https://elementary.io" target="_blank" rel="noopener">elementary.io</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3 class="category-title">Familia Red Hat</h3>
+                        <ul class="resource-list">
+                            <li><a href="https://fedoraproject.org" target="_blank" rel="noopener">fedoraproject.org</a></li>
+                            <li><a href="https://redhat.com" target="_blank" rel="noopener">redhat.com</a></li>
+                            <li><a href="https://rockylinux.org" target="_blank" rel="noopener">rockylinux.org</a></li>
+                            <li><a href="https://almalinux.org" target="_blank" rel="noopener">almalinux.org</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3 class="category-title">Familia Arch</h3>
+                        <ul class="resource-list">
+                            <li><a href="https://archlinux.org" target="_blank" rel="noopener">archlinux.org</a></li>
+                            <li><a href="https://manjaro.org" target="_blank" rel="noopener">manjaro.org</a></li>
+                            <li><a href="https://endeavouros.com" target="_blank" rel="noopener">endeavouros.com</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3 class="category-title">Documentación</h3>
+                        <ul class="resource-list">
+                            <li><a href="https://wiki.archlinux.org" target="_blank" rel="noopener">Arch Wiki</a> (La biblia Linux)</li>
+                            <li><a href="https://debian.org/doc" target="_blank" rel="noopener">Debian Handbook</a></li>
+                            <li><a href="https://docs.fedoraproject.org" target="_blank" rel="noopener">Fedora Docs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">GNU/Linux Hub</span>
+                        <span class="logo-bracket">]</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Tu portal definitivo al mundo del software libre.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Navegación</h4>
+                        <ul>
+                            <li><a href="#que-es">¿Qué es?</a></li>
+                            <li><a href="#kernel">Kernel</a></li>
+                            <li><a href="#distros">Distros</a></li>
+                            <li><a href="#ruta">Ruta</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#comandos">Comandos</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#recursos">Enlaces</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 GNU/Linux Hub · <span class="footer-credits">TerWorks - DeartDev</span>
+                </p>
+                <button class="theme-toggle-footer" id="theme-toggle-footer" aria-label="Cambiar tema">
+                    <span class="theme-icon sun">☀</span>
+                    <span class="theme-icon moon">☾</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botones Flotantes -->
+    <div class="floating-buttons" id="floating-buttons">
+        <button class="float-btn refresh-btn" id="refresh-btn" title="Recargar página (limpiar caché)">
+            <span class="btn-icon">🔄</span>
+            <span class="btn-tooltip">Refresh</span>
+        </button>
+        <button class="float-btn top-btn" id="top-btn" title="Volver arriba">
+            <span class="btn-icon">⬆</span>
+            <span class="btn-tooltip">To Top</span>
+        </button>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span class="toast-message"></span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
